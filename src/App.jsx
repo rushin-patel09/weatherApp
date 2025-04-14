@@ -79,7 +79,7 @@ const App = () => {
             }
           </ul>
         )}
-        <button className="bg-[#8ACFF9] max-w-[30px] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] w-full invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
+        <button className="bg-[#8ACFF9] max-w-[30px] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
       </form>
       {err && <p>{err}</p>}
       {weather && (
