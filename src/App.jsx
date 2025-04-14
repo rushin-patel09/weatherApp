@@ -58,7 +58,7 @@ const App = () => {
         className="p-1.5 flex justify-center relative group"
       >
         <input
-          className="rounded-full w-[80dvw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] hover:scale-[1.05] focus:scale-[1.05] transition-transform z-1"
+          className="box-border rounded-full w-[80dvw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] transition-all"
           type="text"
           value={searchCity}
           onChange={(e) => setSearchCity(e.target.value)}
@@ -79,7 +79,7 @@ const App = () => {
             }
           </ul>
         )}
-        <button className="bg-[#8ACFF9] max-w-[30px] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
+        <button className="bg-[#8ACFF9] max-w-[30px] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] w-full invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
       </form>
       {err && <p>{err}</p>}
       {weather && (
