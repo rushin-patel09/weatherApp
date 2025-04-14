@@ -58,7 +58,7 @@ const App = () => {
         className="p-1.5 flex justify-center relative group"
       >
         <input
-          className="rounded-full w-[80vw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] hover:scale-[1.05] focus:scale-[1.05] transition-transform z-1"
+          className="rounded-full w-[80dvw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] hover:scale-[1.05] focus:scale-[1.05] transition-transform z-1"
           type="text"
           value={searchCity}
           onChange={(e) => setSearchCity(e.target.value)}
@@ -69,7 +69,7 @@ const App = () => {
         />
         {debounceSearch.length >= 1 && showSuggestions && (
           <ul
-            className="absolute top-[70px] bg-white w-[80vw] max-w-[515px] min-w-[300px] py-2.5 px-4 rounded-b-2xl max-[376px]:w-[300px] rounded-2xl outline-2 outline-[#84d2ff]"
+            className="absolute top-[70px] bg-white w-[80dvw] max-w-[515px] min-w-[300px] py-2.5 px-4 rounded-b-2xl max-[376px]:w-[300px] rounded-2xl outline-2 outline-[#84d2ff]"
           >
             {showSuggestions &&
               results !== "" &&
@@ -79,11 +79,11 @@ const App = () => {
             }
           </ul>
         )}
-        <button className="bg-[#8ACFF9] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] w-full invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
+        <button className="bg-[#8ACFF9] max-w-[30px] rounded-full absolute right-3.5 top-3.5 z-1 p-1 group-hover:scale-[1.2] transition-all"><img src={SearchSvg} className="h-[22px] w-full invert-100 brightness-0 hover:rotate-28 transition-transform"/></button>
       </form>
       {err && <p>{err}</p>}
       {weather && (
-        <div className="w-[80vw] max-w-[496px] min-w-[300px] h-max bg-white my-5 rounded-2xl py-5 px-5 text-center">
+        <div className="w-[80dvw] max-w-[496px] min-w-[300px] h-max bg-white my-5 rounded-2xl py-5 px-5 text-center">
           <h2 className="text-[#8ACFF9] text-4xl font-bold pb-1">
             {weather.location.name}
           </h2>
