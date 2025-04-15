@@ -164,10 +164,10 @@ const WeatherComp = () => {
           </div>
 
           <div className="w-[80dvw] max-w-[496px] min-w-[300px] h-max bg-white rounded-2xl py-5 px-5 text-center">
-            <h3 className="text-[#8ACFF9] text-2xl font-bold pb-0.5">
+            <h3 className="text-[#8ACFF9] text-2xl font-bold pb-[1px]">
               Forecast Today
             </h3>
-            <h4 className="text-[#c5c5c5] text-[10px] font-bold pb-2.5">
+            <h4 className="text-[#c5c5c5] text-[12px] font-bold pb-3">
               {weather.forecast.forecastday[0].date}
             </h4>
             <p className="text-[#8ACFF9] text-sm font-bold pb-1.5">
