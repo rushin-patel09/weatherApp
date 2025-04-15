@@ -58,7 +58,7 @@ const App = () => {
         className="p-1.5 flex justify-center relative group"
       >
         <input
-          className="box-border rounded-full w-[80dvw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] transition-all"
+          className="placeholder-gray-400 placeholder:text-base placeholder:leading-tight leading-tight box-border rounded-full w-[80dvw] max-w-[496px] min-w-[300px] h-[45px] bg-white pl-6.5 text-[#808080] text-lg font-bold focus:outline-2 focus:outline-[#84d2ff] transition-all focus:scale-[1.1] placeholder:transform-none"
           type="text"
           value={searchCity}
           onChange={(e) => setSearchCity(e.target.value)}
