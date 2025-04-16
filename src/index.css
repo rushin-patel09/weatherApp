@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-#root{
-    height: 100dvh;
+html,body{
+    height: 100%;
+    width: 100dvw;
     background: #35B1FF;
-    background: linear-gradient(180deg, rgba(53, 177, 255, 1) 1%, rgba(32, 106, 153, 1) 100%);
     background-repeat: no-repeat;
+    overflow: auto;
 }
